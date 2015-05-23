@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="blog">
+    <meta name="keyword" content="rails ruby">
+    <meta name="author" content="wuyang">
+    <title>欢迎来到我的博客</title>
+    <%= stylesheet_link_tag    'homepage', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %> 
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Wuyang</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><%=link_to "博客首页", "/index" %></li>
+                  <li><%=link_to "试验场", "/index" %></li>
+                  <li><%=link_to "关于我", "/about" %></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          
+<%= yield %>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Powered by <%= link_to "Bootstrap" ,"http://getbootstrap.com" %> and <%= link_to "Rails","www.rubyonrails.org" %>. All Rights Reserved! </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
