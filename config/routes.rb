@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/help"    => "homepage#help",    :as => "help"
   get "/about"   => "homepage#about",   :as => "about"
   get "/signup"  => "users#new",        :as => "signup"
+  get "/signin"  => "users#new",        :as => "signin"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
