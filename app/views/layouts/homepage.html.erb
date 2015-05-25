@@ -39,8 +39,13 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Powered by <%= link_to "Bootstrap" ,"http://getbootstrap.com" %> and <%= link_to "Rails","rubyonrails.org" %>. All Rights Reserved! </p>
+              <p>Powered by <%= link_to "Bootstrap" ,"http://getbootstrap.com" %> and <%= link_to "Rails","http://rubyonrails.org" %>. All Rights Reserved! </p>
             </div>
+            <div class="time">
+            <p>现在时间是：<%=@current_time %></p>
+            <p>博客已经运行了 <strong><%= @blog_run_time %></strong> 天</p>
+            </div>
+              
           </div>
 
         </div>
