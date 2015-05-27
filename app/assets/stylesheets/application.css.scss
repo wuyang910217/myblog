@@ -1,0 +1,44 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 50px;
+}
+
+.navbar-brand {
+	padding-left:50px;
+}
+.navbar-collapse {
+	padding-left:20px;
+}
+
+.navbar .navbar-right {
+	padding-right: 80px;
+}
+.footer{
+	font-size:20px;
+	text-align:center;
+	border-top:1px solid #c5c5c5;
+	min-height:200px;
+	line-height:1.9;
+	margin-top:50px;
+	padding-top:3em;
+	padding-bottom:3em;
+	background:#f8f5f0;
+}
+
+.footer .beian{
+	font-size:15px;
+	margin-top:10px;
+	text-align:center;
+	line-height:30px
+}
+
+.footer .beian a {
+	text-decoration:none;
+	color:#999999
+}

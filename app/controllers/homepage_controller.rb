@@ -8,10 +8,7 @@ class HomepageController < ApplicationController
     @blog_run_time=time.strftime("%j").to_i - $blog_time
 
   end
-  def about
-  end
-  def help
-  end
+
 
 
 

@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   root 'homepage#welcome'
   get "/index"   => "articles#index",   :as => "index"
-
-  get "/help"    => "homepage#help",    :as => "help"
-  get "/about"   => "homepage#about",   :as => "about"
+  get "/listall"   => "articles#listall",   :as => "listall"
+  get "/about"   => "articles#about",   :as => "about"
+  get "/admin/login"   => "admin#login",      :as => "admin/login"
+  get "/admin/index"   => "admin#index",      :as => "admin/index"
   get "/signup"  => "users#new",        :as => "signup"
   get "/signin"  => "users#new",        :as => "signin"
 

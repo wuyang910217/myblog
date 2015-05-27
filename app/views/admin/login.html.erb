@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%= stylesheet_link_tag    'admin/login', media: 'all', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %> 
+	<title>admin后台登录</title>
+</head>
+<body class="body-main">
+<div class="login-word">
+	<p>Admin后台登录</p>
+</div>
+<div class="login-window">
+	<label for="login">Email:</label>
+      <input type="email" name="user_email" id="email" value="">
+    </p>
+
+    <p>
+      <label for="password">密码:</label>
+      <input type="password" name="password" id="password" value="">
+    </p>
+
+    <p class="login-submit">
+      <button type="submit" class="login-button">登录</button>
+    </p>
+</div>
+	
+</body>
+</html>

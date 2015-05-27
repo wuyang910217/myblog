@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
   end
-  def list
+  def listall
   end
 end
