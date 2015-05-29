@@ -54,6 +54,9 @@
         </div>
       </div>
     </nav>
+<% if flash.notice %>
+<div class="notice"><%= flash.notice %></div>
+<% end %>
 
 <%= yield %>
 
@@ -65,5 +68,11 @@
       	<%= link_to "豫ICP备15011987号","http://www.miitbeian.gov.cn" %>
       </div>
     </footer>
+<script>
+    var hideNotice= function(){
+      $(".notice").fadeOut("slow");
+    }
+    setTimeout(hideNotice,4000);
+</script>
 </body>
 </html>
