@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
+
   root 'homepage#welcome'
   get "/index"   => "articles#index",   :as => "index"
   get "/listall"   => "articles#listall",   :as => "listall"
   get "/about"   => "articles#about",   :as => "about"
   get "/admin/login"   => "admin#login",      :as => "admin/login"
   get "/admin/index"   => "admin#index",      :as => "admin/index"
-  get "/signup"  => "users#new",        :as => "signup"
-  get "/signin"  => "users#new",        :as => "signin"
-
+  get "/signup"  => "users#signup",        :as => "signup"
+  get "/login"  => "users#login",        :as => "login"
+  post "create_login_session" => "users#create_login_session"
+  delete "logout" => "users#logout", :as => "logout"
+  resources :users,only: [:create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

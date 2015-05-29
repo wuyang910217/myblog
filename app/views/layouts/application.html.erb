@@ -41,10 +41,15 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "关于我", "/about" %></li>
+            <li><%= link_to "About me", "/about" %></li>
             <li><%= link_to "后台", "/admin/login" %></li>
-            <li><%= link_to "注册", "/signin" %></li>
-            <li><%= link_to "登录", "/signup" %></li>
+            <% if current_user %>
+            <li><%= link_to current_user.name, "#" %></li>
+            <li><%= link_to "退出", "/logout", method: 'delete' %></li>
+            <% else %>
+            <li><%= link_to "注册", "/signup" %></li>
+            <li><%= link_to "登录", "/login" %></li>
+            <% end %>
           </ul>
         </div>
       </div>
