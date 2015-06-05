@@ -3,5 +3,9 @@
    <%= text_field_tag :name,params[:name] %>
    <%= label_tag "密码" %>
    <%= password_field_tag :password,params[:password] %>
+   <dl class="form remember-me">
+   <%= check_box_tag :remember_me, 1, params[:remember_me] %>
+   <%= label_tag :remember_me %>
+   </dl>
    <%= submit_tag "登录" %>
  <% end %>

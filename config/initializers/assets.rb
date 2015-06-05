@@ -12,3 +12,4 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( homepage.css )
 Rails.application.config.assets.precompile += %w( admin/login.css )
 Rails.application.config.assets.precompile += %w( admin/index.css )
+Rails.application.config.assets.precompile += %w( users.css )

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  ActiveAdmin.routes(self)
   root 'homepage#welcome'
   get "/index"   => "articles#index",   :as => "index"
   get "/listall"   => "articles#listall",   :as => "listall"
